@@ -27,6 +27,18 @@ br.only-m {
   position: relative;
 }
 
+h3 {
+  font-size: 75px;
+  font-weight: 400;
+}
+
+.description:not(.main-visual .description) {
+  color: #888;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1.8em;
+}
+
 .btn.btn--brown {
   display: inline-block;
   padding: 0 40px;
@@ -207,6 +219,7 @@ br.only-m {
   overflow: hidden;
   height: 520px;
   padding: 40px 80px;
+  box-sizing: border-box;
 }
 
 .main-planner .left,
@@ -226,13 +239,11 @@ br.only-m {
   background: url("../img/planner_logo.png") no-repeat center/auto 200px;
 }
 
-.main-planner .left em {
+.main-planner .left h3 {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  font-size: 78px;
-  font-weight: 400;
 }
 
 .main-planner .right {
@@ -252,10 +263,53 @@ br.only-m {
 }
 
 .main-planner .right .description {
-  color: #888;
   font-size: 22px;
-  font-weight: 500;
-  line-height: 1.8em;
   margin: 25px 0 20px;
 }
+
+/* CELEBRITY */
+.main-celebrity {
+  padding: 140px 0px 80px;
+  text-align: center;
+  background-color: #f7f5ef;
+}
+
+.main-celebrity .inner {}
+
+.main-celebrity .title {}
+
+.main-celebrity .description {
+  margin: 20px 0 30px;
+}
+
+.main-celebrity .btn {
+  margin-bottom: 50px;
+}
+
+.main-celebrity .swiper {}
+
+.main-celebrity .swiper .swiper-slide {} 
+
+.main-celebrity .swiper .swiper-slide img {} 
+
+.main-celebrity .swiper .swiper-slide .caption {
+  position: relative;
+  width: 100%;
+  padding: 16px 0 0 20px;
+  margin-left: 20px;
+  border-left: 1px solid #bf8365;
+  font-size: 18px;
+  color: #222;
+}
+
+.main-celebrity .swiper .swiper-slide .caption::before {
+  content: '';
+  position: absolute;
+  left: -1px;
+  top: -20px;
+  width: 1px;
+  height: calc(100% + 20px);
+  background-color: #bf8365;
+}
+
 
