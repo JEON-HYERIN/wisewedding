@@ -27,6 +27,22 @@ br.only-m {
   position: relative;
 }
 
+.btn.btn--brown {
+  display: inline-block;
+  padding: 0 40px;
+  font-size: 14px;
+  line-height: 46px;
+  color: #bf8365;
+  background-color: #fff;
+  border: 1px solid #bf8365;
+  transition: .3s;
+}
+
+.btn.btn--brown:hover {
+  background-color: #bf8365;
+  color: #fff;
+}
+
 
 /* HEADER */
 #header {
@@ -35,7 +51,7 @@ br.only-m {
   top: 0;
   width: 100%;
   z-index: 9;
-  font-size: 18px;
+  font-size: 16px;
   color: #222;
   background-color: transparent;
 }
@@ -103,6 +119,7 @@ br.only-m {
 
 #header .header__menu li {
   display: inline-block;
+  letter-spacing: 2px;
 }
 
 #header .header__menu li + li {
@@ -179,3 +196,66 @@ br.only-m {
     transform: rotate(360deg);
   }
 }
+
+
+/* PLANNER */
+.main-planner {
+  background-color: #fff;
+}
+
+.main-planner .inner {
+  overflow: hidden;
+  height: 520px;
+  padding: 40px 80px;
+}
+
+.main-planner .left,
+.main-planner .right {
+  width: 50%;
+  height: 100%;
+}
+
+.main-planner .left {
+  float: left;
+}
+
+.main-planner .left .planner__logo {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url("../img/planner_logo.png") no-repeat center/auto 200px;
+}
+
+.main-planner .left em {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 78px;
+  font-weight: 400;
+}
+
+.main-planner .right {
+  position: relative;
+  float: right;
+}
+
+.main-planner .right .content-box {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.main-planner .right .title {
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.main-planner .right .description {
+  color: #888;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.8em;
+  margin: 25px 0 20px;
+}
+
