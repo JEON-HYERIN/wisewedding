@@ -1,0 +1,29 @@
+/* COMMON */
+body {
+  font-family: 'Crimson Text', serif;
+  color: #222;
+}
+
+.pc {
+  display: none !important;
+}
+
+.mobile {
+  display: block !important;
+}
+
+br.only-pc {
+  content: '';
+}
+
+#wrapper {
+  min-width: 320px;
+  max-width: 850px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.inner {
+  margin: 0 auto;
+  position: relative;
+}
