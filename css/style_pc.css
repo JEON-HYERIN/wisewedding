@@ -32,7 +32,8 @@ h3 {
   font-weight: 400;
 }
 
-.description:not(.main-visual .description) {
+body.main p:not(.main-visual p) {
+  margin: 20px 0 30px;
   color: #888;
   font-size: 17px;
   font-weight: 500;
@@ -55,6 +56,27 @@ h3 {
   color: #fff;
 }
 
+.caption {
+  position: relative;
+  width: 100%;
+  padding: 16px 0 0 20px;
+  margin-left: 20px;
+  border-left: 1px solid #bf8365;
+  text-align: left;
+  font-size: 16px;
+  color: #222;
+}
+
+.caption::before {
+  content: '';
+  position: absolute;
+  left: -1px;
+  top: -20px;
+  width: 1px;
+  height: calc(100% + 20px);
+  background-color: #bf8365;
+}
+
 
 /* HEADER */
 #header {
@@ -66,6 +88,7 @@ h3 {
   font-size: 16px;
   color: #222;
   background-color: transparent;
+  transition: .3s;
 }
 
 #header.scrolled {
@@ -279,7 +302,7 @@ h3 {
 .main-celebrity .title {}
 
 .main-celebrity .description {
-  margin: 20px 0 30px;
+  
 }
 
 .main-celebrity .btn {
@@ -298,7 +321,8 @@ h3 {
   padding: 16px 0 0 20px;
   margin-left: 20px;
   border-left: 1px solid #bf8365;
-  font-size: 18px;
+  text-align: left;
+  font-size: 16px;
   color: #222;
 }
 
@@ -311,5 +335,86 @@ h3 {
   height: calc(100% + 20px);
   background-color: #bf8365;
 }
+
+/* STYLING */
+.main-styling {
+  background-color: #fff;
+  text-align: center;
+}
+
+.main-styling .inner {
+  overflow: hidden;
+  padding: 120px 80px;
+}
+
+.main-styling .left,
+.main-styling .right {
+  width: 49.5%;
+}
+
+.main-styling .left {
+  float: left;
+}
+.main-styling .left .row > div {
+  display: inline-block;
+  width: 48%;
+  margin: 0;
+  cursor: pointer;
+}
+
+.main-styling .left .row > div:hover .view-more {
+  opacity: 0.85;
+}
+
+.main-styling .left .row > div:hover .caption {
+  color: #bf8365;
+}
+
+.main-styling .left .row + .row {
+  margin-top: 70px;
+}
+
+.main-styling .left .row > div:nth-child(2n) {
+  margin-left: 2%;
+}
+
+.main-styling .left .image {
+  position: relative;
+}
+
+.main-styling .left .view-more {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #bf8365;
+  opacity: 0;
+  transition: .3s;
+}
+
+.main-styling .left .view-more span {
+  position: absolute;
+  left: 24px;
+  top: 24px;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  color: #fff;
+}
+
+.main-styling .left .caption {
+  transition: .3s;
+}
+
+.main-styling .right {
+  float: right;
+}
+.main-styling .right .content-box {
+  margin-top: 50%;
+}
+.main-styling .right .content-box .title {}
+.main-styling .right .content-box .description {}
+.main-styling .right .content-box .btn {}
 
 
