@@ -1,9 +1,15 @@
+var bullet = ['1', '2', '3', '4'];
+
+// console.log(bullet)
 new Swiper('.main-visual .swiper', {
   autoplay: true,
   loop: true,
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
+    renderBullet: function (index, className) {
+      return '<div class="' + className + '"><a href="#">' + (bullet[index]) + '</a></div>';
+    }
   }
 })
 
