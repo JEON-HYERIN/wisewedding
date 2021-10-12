@@ -483,10 +483,6 @@ body.main p:not(.main-visual p) {
   margin: 0 auto;
 }
 
-.main-detail .inner .description {
-  /* font-size: 16px; */
-}
-
 /* FOOTER */
 #footer {
   background-color: #fff;
@@ -576,6 +572,27 @@ body.main p:not(.main-visual p) {
   margin-left: 20px;
 }
 
+/* ARROW-UP */
+#arrow-up {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  z-index: 9;
+  font-size: 20px;
+  color: #bf8365;
+  transition: .2s;
+  display: none;
+}
+
+#arrow-up.visible {
+  display: block;
+}
+
+#arrow-up span {
+  position: absolute;
+  left: -9999px;
+}
+
 
 /* 미디어쿼리 */
 @media screen and (max-width: 359.9px) {
@@ -588,11 +605,6 @@ body.main p:not(.main-visual p) {
 
   .main-visual .swiper .swiper-slide .text-group .description {
     font-size: 14px;
-  }
-
-  /* PLANNER */
-  .main-planner .right .description {
-    /* font-size: 16px; */
   }
 
   /* FOOTER */
