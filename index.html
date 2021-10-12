@@ -489,7 +489,13 @@
   $('.main-partner .contents ul').on('mouseleave blur', function () {
     $('.main-partner .contents ul li').removeClass('selected');
     $('.main-partner .contents ul li:eq(0)').addClass('selected');
-  });  
+  });
+  
+  $('.main-styling .left .row > div > .image').on('click', function () {
+    var index = $('.main-styling .left .row > div').index($(this).parent());
+    $('.main-styling .left .row > div').removeClass('clicked');
+    $('.main-styling .left .row > div:eq(' + index + ')').addClass('clicked');
+  });
   </script>
 </body>
 </html>
