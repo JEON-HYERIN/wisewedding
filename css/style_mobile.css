@@ -303,15 +303,6 @@ body.main p:not(.main-visual p) {
   transform: translate(-50%, -50%);
 }
 
-.main-planner .right {
-
-
-}
-
-.main-planner .right .content-box {
-
-}
-
 .main-planner .right .title {
   font-size: 16px;
   letter-spacing: 1px;
@@ -332,12 +323,6 @@ body.main p:not(.main-visual p) {
 
 .main-celebrity .inner {
   padding: 0;
-}
-
-.main-celebrity .title {}
-
-.main-celebrity .description {
-  
 }
 
 .main-celebrity .btn {
@@ -368,10 +353,6 @@ body.main p:not(.main-visual p) {
   width: 1px;
   height: calc(100% + 20px);
   background-color: #bf8365;
-}
-
-.main-celebrity .swiper .swiper-pagination {
-
 }
 
 .main-celebrity .swiper .swiper-pagination-bullet {

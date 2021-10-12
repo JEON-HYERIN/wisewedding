@@ -95,6 +95,7 @@ body.main p:not(.main-visual p) {
   }
 }
 
+
 /* HEADER */
 #header {
   position: fixed;
@@ -128,6 +129,8 @@ body.main p:not(.main-visual p) {
   display: block;
   width: 232px;
 }
+
+#header h1 a img {}
 
 #header .toggle-btn {
   position: absolute;
