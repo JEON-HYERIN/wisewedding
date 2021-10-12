@@ -457,8 +457,7 @@ body.main p:not(.main-visual p) {
 }
 
 .main-partner h3 {
-  margin-bottom: 70px;
-  line-height: 100px;
+
 }
 
 .main-partner .inner .description {
@@ -471,14 +470,14 @@ body.main p:not(.main-visual p) {
 
 .main-partner .contents ul li {
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   color: #888;
   border-bottom: 1px solid transparent;
 }
 
 .main-partner .contents ul li a {
   display: block;
-  font-size: 25px;
+  font-size: 16px;
   font-weight: 500;
   letter-spacing: 0.5px;
 }
@@ -511,20 +510,17 @@ body.main p:not(.main-visual p) {
 }
 
 .main-detail .inner {
-  padding: 150px 0;
+  padding: 80px 24px;
 }
 
 .main-detail .title {
-  width: 300px;
+  width: 210px;
   margin: 0 auto;
 }
 
 .main-detail .inner .description {
-  margin-bottom: 40px;
-  font-size: 22px;
+  font-size: 16px;
 }
-
-.main-detail .btn {}
 
 /* FOOTER */
 #footer {
@@ -533,7 +529,7 @@ body.main p:not(.main-visual p) {
 }
 
 #footer .inner {
-  padding: 30px 80px;
+  padding: 30px 24px;
 }
 
 #footer a {
@@ -541,34 +537,21 @@ body.main p:not(.main-visual p) {
 }
 
 #footer .row {
-  overflow: hidden;
+  
 }
 
 #footer .row:first-child {
-  padding-bottom: 30px;
+  height: 200px;
 }
 
 #footer .row + .row {
-  position: relative;
-  padding-top: 30px;
-}
-
-#footer .row + .row::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 1px;
-  background-color: #ddd;
-}
-
-#footer .row > * {
-  width: calc(100% / 3);
+  margin-top: 95px;
+  padding-top: 10px;
+  border-top: 1px solid #ddd;
 }
 
 .footer__logo {
-  float: left;
+  margin-bottom: 30px;
 }
 
 .footer__logo > div {
@@ -576,16 +559,18 @@ body.main p:not(.main-visual p) {
 }
 
 #footer .info {
-  font-size: 15px;
+  font-size: 14px;
   line-height: 1.9em;
   color: #888;
-  float: right;
 }
 
 #footer address {}
 
 .footer__menu {
-  float: right;
+  overflow: hidden;
+  position: absolute;
+  left: 24px;
+  top: 210px;
 }
 
 .footer__menu li {
@@ -604,7 +589,7 @@ body.main p:not(.main-visual p) {
 }
 
 .footer__links {
-  float: left;
+  
 }
 
 .footer__links li {
@@ -631,7 +616,7 @@ body.main p:not(.main-visual p) {
 #footer .info:last-child {}
 
 .footer__policy {
-  float: right;
+  margin: 10px 0;
 }
 
 .footer__policy li {

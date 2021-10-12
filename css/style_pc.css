@@ -95,7 +95,6 @@ body.main p:not(.main-visual p) {
   }
 }
 
-
 /* HEADER */
 #header {
   position: fixed;
@@ -129,8 +128,6 @@ body.main p:not(.main-visual p) {
   display: block;
   width: 232px;
 }
-
-#header h1 a img {}
 
 #header .toggle-btn {
   position: absolute;
@@ -346,14 +343,6 @@ body.main p:not(.main-visual p) {
   background-color: #f7f5ef;
 }
 
-.main-celebrity .inner {}
-
-.main-celebrity .title {}
-
-.main-celebrity .description {
-  
-}
-
 .main-celebrity .btn {
   margin-bottom: 50px;
 }
@@ -370,10 +359,6 @@ body.main p:not(.main-visual p) {
   color: #bf8365;
 }
 
-.main-celebrity .swiper .swiper-slide img {} 
-
-
-
 .main-celebrity .swiper .swiper-slide .caption::before {
   content: '';
   position: absolute;
@@ -382,10 +367,6 @@ body.main p:not(.main-visual p) {
   width: 1px;
   height: calc(100% + 20px);
   background-color: #bf8365;
-}
-
-.main-celebrity .swiper .swiper-pagination {
-
 }
 
 .main-celebrity .swiper .swiper-pagination-bullet {
@@ -464,18 +445,12 @@ body.main p:not(.main-visual p) {
   color: #fff;
 }
 
-
-
 .main-styling .right {
   float: right;
 }
 .main-styling .right .content-box {
   margin-top: 50%;
 }
-.main-styling .right .content-box .title {}
-.main-styling .right .content-box .description {}
-.main-styling .right .content-box .btn {}
-
 
 /* BG */
 .main-bg {
@@ -484,10 +459,6 @@ body.main p:not(.main-visual p) {
 }
 
 /* PLANNER */
-.main-partner {
-  
-}
-
 .main-partner .inner {
   padding: 100px 80px;
 }
@@ -503,10 +474,6 @@ body.main p:not(.main-visual p) {
   top: 95px;
   font-size: 14px;
 }
-
-.main-partner .contents {}
-
-.main-partner .contents ul {}
 
 .main-partner .contents ul li {
   position: relative;
@@ -563,8 +530,6 @@ body.main p:not(.main-visual p) {
   font-size: 22px;
 }
 
-.main-detail .btn {}
-
 /* FOOTER */
 #footer {
   background-color: #fff;
@@ -615,13 +580,11 @@ body.main p:not(.main-visual p) {
 }
 
 #footer .info {
+  float: right;
   font-size: 15px;
   line-height: 1.9em;
   color: #888;
-  float: right;
 }
-
-#footer address {}
 
 .footer__menu {
   float: right;
@@ -660,14 +623,10 @@ body.main p:not(.main-visual p) {
   background-color: #fff;
 }
 
-.footer__links li a i.fab {}
-
 .footer__links li a i.fab span {
   position: absolute;
   left: -9999px;
 }
-
-#footer .info:last-child {}
 
 .footer__policy {
   float: right;
