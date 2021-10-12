@@ -78,8 +78,8 @@ body.main p:not(.main-visual p) {
 
 .contact-btn {
   position: fixed;
-  bottom: 5%;
   right: 5%;
+  bottom: 5%;
   width: 126px;
   height: 126px;
   background-color: #fff;
