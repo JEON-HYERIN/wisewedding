@@ -8,6 +8,7 @@ body {
   font-weight: 400;
   margin: 0;
   background-color: #fff;
+  color: #222;
 }
 
 a {
@@ -50,13 +51,6 @@ button,
   text-align: center;
   background-color: transparent;
   cursor: pointer;
-}
-
-i[class^="fa"] {
-  position: relative;
-  display: inline-block;
-  vertical-align: middle;
-  overflow: hidden;
 }
 
 i[class^="fa"] span {
