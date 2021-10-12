@@ -545,7 +545,7 @@ body.main p:not(.main-visual p) {
 
 /* DETAIL */
 .main-detail {
-  background: #f7f5ef;
+  background-color: #f7f5ef;
   text-align: center;
 }
 
