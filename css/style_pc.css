@@ -45,7 +45,6 @@ body.main p:not(.main-visual p) {
   font-size: 14px;
   line-height: 46px;
   color: #bf8365;
-  background-color: #fff;
   border: 1px solid #bf8365;
   transition: .3s;
 }
@@ -544,5 +543,25 @@ body.main p:not(.main-visual p) {
   width: 100%;
 }
 
+/* DETAIL */
+.main-detail {
+  background: #f7f5ef;
+  text-align: center;
+}
 
+.main-detail .inner {
+  padding: 150px 0;
+}
+
+.main-detail .title {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.main-detail .inner .description {
+  margin-bottom: 40px;
+  font-size: 22px;
+}
+
+.main-detail .btn {}
 
