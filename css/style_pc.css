@@ -480,7 +480,7 @@ body.main p:not(.main-visual p) {
 /* BG */
 .main-bg {
   height: 640px;
-  background: url("../img/wedding_planner_bg.jpg") no-repeat center/cover;
+  background: url("../img/main_bg.jpg") no-repeat center/cover;
 }
 
 /* PLANNER */

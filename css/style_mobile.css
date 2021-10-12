@@ -34,17 +34,18 @@ h3 {
 }
 
 body.main p:not(.main-visual p) {
-  margin: 20px 0 30px;
+  margin: 20px 0;
   color: #888;
-  font-size: 17px;
+  font-size: 14px;
   font-weight: 500;
   line-height: 1.8em;
+  text-align: center;
 }
 
 .btn.btn--brown {
   display: block;
   width: 200px;
-  padding: 0 20px;
+  padding: 0 10px;
   margin: 0 auto;
   font-size: 13px;
   line-height: 40px;
@@ -61,11 +62,11 @@ body.main p:not(.main-visual p) {
 .caption {
   position: relative;
   width: 100%;
-  padding: 16px 0 0 20px;
-  margin-left: 20px;
+  padding: 10px 0 0 10px;
+  margin-left: 10px;
   border-left: 1px solid #bf8365;
   text-align: left;
-  font-size: 16px;
+  font-size: 14px;
   color: #222;
   transition: .3s;
 }
@@ -314,15 +315,15 @@ body.main p:not(.main-visual p) {
 }
 
 .main-planner .right .description {
-  font-size: 17px;
-  margin: 5px 0 20px;
   max-width: 300px;
+  margin: 5px 0 20px;
+  text-align: left;
+  font-size: 17px;
 }
 
 /* CELEBRITY */
 .main-celebrity {
-  padding: 120px 0 40px;
-  text-align: center;
+  padding: 60px 24px 30px;
   background-color: #f7f5ef;
 }
 
@@ -339,7 +340,7 @@ body.main p:not(.main-visual p) {
 }
 
 .main-celebrity .swiper {
-  padding-bottom: 80px;
+  padding-bottom: 50px;
 }
 
 .main-celebrity .swiper .swiper-slide {
@@ -369,7 +370,7 @@ body.main p:not(.main-visual p) {
 }
 
 .main-celebrity .swiper .swiper-pagination-bullet {
-  margin: 0 10px;
+  margin: 0 7px;
 }
 
 .main-celebrity .swiper .swiper-pagination-bullet-active {
@@ -380,22 +381,16 @@ body.main p:not(.main-visual p) {
 /* STYLING */
 .main-styling {
   background-color: #fff;
-  text-align: center;
 }
 
 .main-styling .inner {
-  overflow: hidden;
-  padding: 120px 80px;
-}
-
-.main-styling .left,
-.main-styling .right {
-  width: 49.5%;
+  padding: 60px 24px;
 }
 
 .main-styling .left {
-  float: left;
-}
+  margin-top: 40px;
+}  
+
 .main-styling .left .row > div {
   display: inline-block;
   width: 48%;
@@ -436,31 +431,20 @@ body.main p:not(.main-visual p) {
 }
 
 .main-styling .left .view-more span {
-  position: absolute;
-  left: 24px;
-  top: 24px;
-  font-size: 16px;
-  letter-spacing: 0.02em;
-  color: #fff;
+  display: none;
 }
 
-
-
-.main-styling .right {
-  float: right;
+.main-styling .left .caption {
+  max-width: 130px;
 }
-.main-styling .right .content-box {
-  margin-top: 50%;
-}
-.main-styling .right .content-box .title {}
-.main-styling .right .content-box .description {}
-.main-styling .right .content-box .btn {}
 
+.main-styling .left .caption span {
+  font-size: 13px;
+}
 
 /* BG */
 .main-bg {
-  height: 640px;
-  background: url("../img/wedding_planner_bg.jpg") no-repeat center/cover;
+
 }
 
 /* PLANNER */
@@ -469,7 +453,7 @@ body.main p:not(.main-visual p) {
 }
 
 .main-partner .inner {
-  padding: 100px 80px;
+  padding: 60px 24px;
 }
 
 .main-partner h3 {
@@ -478,10 +462,7 @@ body.main p:not(.main-visual p) {
 }
 
 .main-partner .inner .description {
-  position: absolute;
-  left: 80px;
-  top: 95px;
-  font-size: 14px;
+  margin: 10px 0 50px;
 }
 
 .main-partner .contents {}
