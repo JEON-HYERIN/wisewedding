@@ -219,33 +219,30 @@ body.main p:not(.main-visual p) {
   left: 80px;
   top: 32%;
   color: #000;
+  cursor: pointer;
 }
 
 .main-visual .swiper .swiper-slide .text-group .title {
   font-size: 55px;
+  transform: translateY(150px);
+  transition: .7s;
 }
 
 .main-visual .swiper .swiper-slide .text-group .description {
   font-size: 24px;
   line-height: 1.6em;
+  transform: translateY(150px);
+  transition: .7s;
+  transition-delay: .2s;
+  
 }
 
 .main-visual .swiper .swiper-slide-active .text-group .title {
-  animation: up-to .7s;
+  transform: translateY(0); 
 }
 
 .main-visual .swiper .swiper-slide-active .text-group .description {
-  animation: up-to .7s .2s;
-}
-
-@keyframes up-to {
-  0% {
-    transform: translateY(150px);
-  }
-
-  100% {
-    transform: translateY(0); 
-  }
+  transform: translateY(0); 
 }
 
 .main-visual .swiper .swiper-pagination {
