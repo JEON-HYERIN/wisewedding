@@ -212,7 +212,7 @@ body.main p:not(.main-visual p) {
   position: absolute;
   left: 24px;
   top: 40%;
-  color: #000;
+  color: #212121;
   cursor: pointer;
 }
 
@@ -575,8 +575,8 @@ body.main p:not(.main-visual p) {
 /* ARROW-UP */
 #arrow-up {
   position: fixed;
-  right: 10px;
-  bottom: 10px;
+  right: 15px;
+  bottom: 15px;
   z-index: 9;
   font-size: 20px;
   color: #bf8365;
@@ -586,11 +586,6 @@ body.main p:not(.main-visual p) {
 
 #arrow-up.visible {
   display: block;
-}
-
-#arrow-up span {
-  position: absolute;
-  left: -9999px;
 }
 
 

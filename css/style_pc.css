@@ -218,7 +218,7 @@ body.main p:not(.main-visual p) {
   position: absolute;
   left: 80px;
   top: 32%;
-  color: #000;
+  color: #212121;
   cursor: pointer;
 }
 
@@ -662,11 +662,6 @@ body.main p:not(.main-visual p) {
 
 #arrow-up.visible {
   display: block;
-}
-
-#arrow-up span {
-  position: absolute;
-  left: -9999px;
 }
 
 

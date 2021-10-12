@@ -52,14 +52,16 @@ button,
   cursor: pointer;
 }
 
-/* 키보드로 버튼에 포커스 시 */
-button:focus-visible {
-  outline: 3px solid #000;
+i[class^="fa"] {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
 }
 
-/* 마우스, 터치로 버튼에 포커스 시 */
-button:focus:not(:focus-visible) {
-  outline: none;
+i[class^="fa"] span {
+  position: absolute;
+  left: -9999px;
 }
 
 .hide {
