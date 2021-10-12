@@ -28,7 +28,7 @@ br.only-pc {
 }
 
 h3 {
-  font-size: 75px;
+  font-size: 50px;
   font-weight: 400;
   text-align: center;
 }
@@ -42,9 +42,12 @@ body.main p:not(.main-visual p) {
 }
 
 .btn.btn--brown {
-  padding: 0 40px;
-  font-size: 14px;
-  line-height: 46px;
+  display: block;
+  width: 200px;
+  padding: 0 20px;
+  margin: 0 auto;
+  font-size: 13px;
+  line-height: 40px;
   color: #bf8365;
   border: 1px solid #bf8365;
   transition: .3s;
@@ -274,26 +277,19 @@ body.main p:not(.main-visual p) {
 
 .main-planner .inner {
   overflow: hidden;
-  height: 520px;
-  padding: 40px 80px;
+  padding: 60px 24px;
   box-sizing: border-box;
 }
 
-.main-planner .left,
-.main-planner .right {
-  width: 50%;
-  height: 100%;
-}
-
 .main-planner .left {
-  float: left;
+  height: 30vh;
 }
 
 .main-planner .left .planner__logo {
   position: relative;
   width: 100%;
   height: 100%;
-  background: url("../img/planner_logo.png") no-repeat center/auto 200px;
+  background: url("../img/planner_logo.png") no-repeat center/auto 170px;
 }
 
 .main-planner .left h3 {
@@ -304,14 +300,12 @@ body.main p:not(.main-visual p) {
 }
 
 .main-planner .right {
-  position: relative;
-  float: right;
+
+
 }
 
 .main-planner .right .content-box {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+
 }
 
 .main-planner .right .title {
@@ -320,8 +314,9 @@ body.main p:not(.main-visual p) {
 }
 
 .main-planner .right .description {
-  font-size: 22px;
-  margin: 25px 0 20px;
+  font-size: 17px;
+  margin: 5px 0 20px;
+  max-width: 300px;
 }
 
 /* CELEBRITY */
