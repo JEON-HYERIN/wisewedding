@@ -25,12 +25,8 @@
   <meta property="twitter:url" content="https://jeon-hyerin.github.io/outback" />
 
   <!-- Favicon -->
-  <link rel="shortcut icon" href="./favicon.png" />
-  <!-- Google Fonts - Crimson Text -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
-
+  <link rel="shortcut icon" href="./favicon.ico" />
+<!-- Google Fonts - Noto Serif KR -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;500;700&display=swap" rel="stylesheet">
@@ -257,7 +253,7 @@
               </div>
             </div>
           </div>
-          <!-- <div class="swiper-pagination"></div> -->
+          <div class="swiper-pagination"></div>
         </div>
       </section>
 
@@ -344,7 +340,7 @@
         <h2 class="hide">배경영역</h2>
       </section>
 
-      <!-- WEDDING PLANNER -->
+      <!-- PARTNER -->
       <section class="main-partner">
         <h2 class="hide">와이즈웨딩 제휴 브랜드</h2>
         <div class="inner">
@@ -356,13 +352,48 @@
 
           <div class="contents">
             <ul>
-              <li><a href="javascript:void(0)">Wedding Hall</a></li>
-              <li><a href="javascript:void(0)">Wedding Snap</a></li>
-              <li><a href="javascript:void(0)">Studio</a></li>
-              <li><a href="javascript:void(0)">Dress</a></li>
-              <li><a href="javascript:void(0)">Suit &amp; Tuxedo</a></li>
-              <li><a href="javascript:void(0)">Hair &amp; Make up</a></li>
-              <li><a href="javascript:void(0)">Others</a></li>
+              <li class="selected">
+                <a href="javascript:void(0)">Wedding Hall</a>
+                <div class="image">
+                  <img src="./img/partner_img1.jpg" alt="" />
+                </div>
+              </li>
+              <li>
+                <a href="javascript:void(0)">Wedding Snap</a>
+                <div class="image">
+                  <img src="./img/partner_img2.jpg" alt="" />
+                </div>
+              </li>
+              <li>
+                <a href="javascript:void(0)">Studio</a>
+                <div class="image">
+                  <img src="./img/partner_img3.jpg" alt="" />
+                </div>
+              </li>
+              <li>
+                <a href="javascript:void(0)">Dress</a>
+                <div class="image">
+                  <img src="./img/partner_img4.jpg" alt="" />
+                </div>
+              </li>
+              <li>
+                <a href="javascript:void(0)">Suit &amp; Tuxedo</a>
+                <div class="image">
+                  <img src="./img/partner_img5.jpg" alt="" />
+                </div>
+              </li>
+              <li>
+                <a href="javascript:void(0)">Hair &amp; Make up</a>
+                <div class="image">
+                  <img src="./img/partner_img6.jpg" alt="" />
+                </div>
+              </li>
+              <li>
+                <a href="javascript:void(0)">Others</a>
+                <div class="image">
+                  <img src="./img/partner_img7.jpg" alt="" />
+                </div>
+              </li>
             </ul>
           </div>
 
@@ -376,7 +407,16 @@
   </div>
 
   <script>
+  $('.main-partner .contents ul li a').on('mouseenter focus', function () {
+    var index = $('.main-partner .contents ul li').index($(this).parent());
+    $('.main-partner .contents ul li').removeClass('selected');
+    $('.main-partner .contents ul li:eq(' + index + ')').addClass('selected');
+  }); 
 
+  $('.main-partner .contents ul').on('mouseleave blur', function () {
+    $('.main-partner .contents ul li').removeClass('selected');
+    $('.main-partner .contents ul li:eq(0)').addClass('selected');
+  });  
   </script>
 </body>
 </html>

@@ -29,6 +29,7 @@ br.only-m {
 h3 {
   font-size: 75px;
   font-weight: 400;
+  text-align: center;
 }
 
 body.main p:not(.main-visual p) {
@@ -40,7 +41,6 @@ body.main p:not(.main-visual p) {
 }
 
 .btn.btn--brown {
-  display: inline-block;
   padding: 0 40px;
   font-size: 14px;
   line-height: 46px;
@@ -342,7 +342,7 @@ body.main p:not(.main-visual p) {
 
 /* CELEBRITY */
 .main-celebrity {
-  padding: 140px 0px 80px;
+  padding: 120px 0 40px;
   text-align: center;
   background-color: #f7f5ef;
 }
@@ -359,7 +359,9 @@ body.main p:not(.main-visual p) {
   margin-bottom: 50px;
 }
 
-.main-celebrity .swiper {}
+.main-celebrity .swiper {
+  padding-bottom: 80px;
+}
 
 .main-celebrity .swiper .swiper-slide {
   cursor: pointer;
@@ -381,6 +383,19 @@ body.main p:not(.main-visual p) {
   width: 1px;
   height: calc(100% + 20px);
   background-color: #bf8365;
+}
+
+.main-celebrity .swiper .swiper-pagination {
+
+}
+
+.main-celebrity .swiper .swiper-pagination-bullet {
+  margin: 0 10px;
+}
+
+.main-celebrity .swiper .swiper-pagination-bullet-active {
+  background-color: #bf8365;
+  opacity: 0.75;
 }
 
 /* STYLING */
@@ -473,5 +488,61 @@ body.main p:not(.main-visual p) {
 .main-partner {
   
 }
+
+.main-partner .inner {
+  padding: 100px 80px;
+}
+
+.main-partner h3 {
+  margin-bottom: 70px;
+  line-height: 100px;
+}
+
+.main-partner .inner .description {
+  position: absolute;
+  left: 80px;
+  top: 95px;
+  font-size: 14px;
+}
+
+.main-partner .contents {}
+
+.main-partner .contents ul {}
+
+.main-partner .contents ul li {
+  position: relative;
+  margin-bottom: 20px;
+  color: #888;
+  border-bottom: 1px solid transparent;
+}
+
+.main-partner .contents ul li a {
+  display: block;
+  font-size: 25px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.main-partner .contents ul li.selected {
+  color: #bf8365;
+  border-color: #bf8365;
+}
+
+.main-partner .contents ul li .image {
+  width: 45%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: none;
+}
+
+.main-partner .contents ul li.selected .image {
+  display: block;
+}
+
+.main-partner .contents ul li img {
+  width: 100%;
+}
+
 
 

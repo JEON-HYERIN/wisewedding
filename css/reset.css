@@ -45,7 +45,7 @@ strong {
 
 button,
 .btn {
-  display: block;
+  display: inline-block;
   border: none;
   text-align: center;
   background-color: transparent;
