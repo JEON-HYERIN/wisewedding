@@ -116,17 +116,21 @@ body.main p:not(.main-visual p) {
   font-size: 16px;
   color: #222;
   background-color: transparent;
-  border-bottom: 0.5px solid transparent;
+  /* border-bottom: 0.5px solid transparent; */
   transition: .3s;
 }
 
 #header.scrolled {
   background-color: #fff;
-  border-bottom-color: #ddd;
+  /* border-bottom-color: #ddd; */
 }
 
 #header .inner {
   height: 60px;
+}
+
+#header.scrolled .inner {
+  border-bottom: 1px solid #ddd;
 }
 
 #header h1 {
@@ -404,10 +408,6 @@ body.main p:not(.main-visual p) {
   transition: .3s;
 }
 
-.main-styling .left .row > div.clicked .view-more {
-  opacity: 0.85;
-}
-
 .main-styling .left .view-more span {
   position: absolute;
   left: 24px;
@@ -415,10 +415,6 @@ body.main p:not(.main-visual p) {
   font-size: 12px;
   letter-spacing: 0.02em;
   color: #fff;
-}
-
-.main-styling .left .row > div.clicked .caption {
-  color: #bf8365;
 }
 
 .main-styling .left .caption {
@@ -503,16 +499,12 @@ body.main p:not(.main-visual p) {
 }
 
 #footer .row:first-child {
-  padding-bottom: 20px;
+  padding-bottom: 25px;
 }
 
 #footer .row + .row {
-  padding-top: 20px;
+  padding-top: 25px;
   border-top: 1px solid #ddd;
-}
-
-.footer__logo {
-  
 }
 
 .footer__logo > div {
@@ -527,7 +519,7 @@ body.main p:not(.main-visual p) {
 
 .footer__menu {
   overflow: hidden;
-  margin: 30px 0;
+  margin: 25px 0;
 }
 
 .footer__menu li {
