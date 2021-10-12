@@ -33,7 +33,8 @@ h3 {
 }
 
 body.main p:not(.main-visual p) {
-  margin: 20px 0 30px;
+  max-width: 535px;
+  margin: 20px auto 30px;
   color: #888;
   font-size: 17px;
   font-weight: 500;
@@ -335,6 +336,7 @@ body.main p:not(.main-visual p) {
 }
 
 .main-planner .right .description {
+  max-width: none;
   font-size: 22px;
   margin: 25px 0 20px;
 }
@@ -646,4 +648,15 @@ body.main p:not(.main-visual p) {
 
 .footer__policy li + li {
   margin-left: 20px;
+}
+
+
+/* 미디어쿼리 */
+@media screen and (max-width: 1200px) {
+
+  /* index.html */
+  /* PARTNER */
+  .main-partner .inner .description {
+    left: 45px;
+  }
 }

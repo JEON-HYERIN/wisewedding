@@ -38,7 +38,8 @@ h3 {
 }
 
 body.main p:not(.main-visual p) {
-  margin: 20px 0;
+  max-width: 535px;
+  margin: 20px auto;
   color: #888;
   font-size: 14px;
   font-weight: 500;
@@ -307,6 +308,7 @@ body.main p:not(.main-visual p) {
 }
 
 .main-planner .right .description {
+  max-width: 640px;
   margin: 5px 0 20px;
   text-align: left;
   font-size: 17px;
@@ -419,7 +421,7 @@ body.main p:not(.main-visual p) {
 
 /* PLANNER */
 .main-partner .inner .description {
-  margin: 10px 0 50px;
+  margin: 10px auto 50px;
 }
 
 .main-partner .contents ul li {
