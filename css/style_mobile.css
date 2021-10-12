@@ -116,13 +116,11 @@ body.main p:not(.main-visual p) {
   font-size: 16px;
   color: #222;
   background-color: transparent;
-  /* border-bottom: 0.5px solid transparent; */
   transition: .3s;
 }
 
 #header.scrolled {
   background-color: #fff;
-  /* border-bottom-color: #ddd; */
 }
 
 #header .inner {
@@ -452,7 +450,7 @@ body.main p:not(.main-visual p) {
 }
 
 .main-partner .contents ul li .image {
-  width: 45%;
+  width: 50%;
   position: absolute;
   right: 0;
   top: 0;
@@ -467,6 +465,9 @@ body.main p:not(.main-visual p) {
   width: 100%;
 }
 
+.main-partner .contents ul li.selected img {
+
+}
 /* DETAIL */
 .main-detail {
   background-color: #f7f5ef;
