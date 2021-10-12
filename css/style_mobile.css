@@ -27,6 +27,10 @@ br.only-pc {
   position: relative;
 }
 
+section .inner {
+  padding: 60px 24px;
+}
+
 h3 {
   font-size: 50px;
   font-weight: 400;
@@ -278,7 +282,6 @@ body.main p:not(.main-visual p) {
 
 .main-planner .inner {
   overflow: hidden;
-  padding: 60px 24px;
   box-sizing: border-box;
 }
 
@@ -327,7 +330,9 @@ body.main p:not(.main-visual p) {
   background-color: #f7f5ef;
 }
 
-.main-celebrity .inner {}
+.main-celebrity .inner {
+  padding: 0;
+}
 
 .main-celebrity .title {}
 
@@ -381,10 +386,6 @@ body.main p:not(.main-visual p) {
 /* STYLING */
 .main-styling {
   background-color: #fff;
-}
-
-.main-styling .inner {
-  padding: 60px 24px;
 }
 
 .main-styling .left {
@@ -442,31 +443,10 @@ body.main p:not(.main-visual p) {
   font-size: 13px;
 }
 
-/* BG */
-.main-bg {
-
-}
-
 /* PLANNER */
-.main-partner {
-  
-}
-
-.main-partner .inner {
-  padding: 60px 24px;
-}
-
-.main-partner h3 {
-
-}
-
 .main-partner .inner .description {
   margin: 10px 0 50px;
 }
-
-.main-partner .contents {}
-
-.main-partner .contents ul {}
 
 .main-partner .contents ul li {
   position: relative;
