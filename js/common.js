@@ -1,3 +1,9 @@
+'use strict';
+
+$(document).on('click', 'a[href="#"]', function (e) {
+  e.preventDefault();
+});
+
 const header = document.querySelector('#header');
 
 window.addEventListener('scroll', function () {
