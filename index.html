@@ -485,17 +485,26 @@
   </div>
 
   <script>
-  $('.main-partner .contents ul li a').on('mouseenter focus', function () {
-    var index = $('.main-partner .contents ul li').index($(this).parent());
-    $('.main-partner .contents ul li').removeClass('selected');
-    $('.main-partner .contents ul li:eq(' + index + ')').addClass('selected');
+    var imageLength = $('.main-partner .contents ul li').length - 1;
+    var imageFirst = 0;
+    var imageNext = 0;
+    var timerSpeed = 2000;
+    var timerId = setInterval(function () {
+      showImage(imageNext);
+    }, timerSpeed);
+    
+    showImage(imageFirst);
+    setInterval(timerId);
+  $('.main-partner .contents ul li a').on('click', function () {
+    showImage(imageNext);
   }); 
 
-  $('.main-partner .contents ul').on('mouseleave blur', function () {
+  function showImage(n) {
+    imageFirst = 0;
+    imageNext = (n === imageLength) ? imageFirst : (n + 1);
     $('.main-partner .contents ul li').removeClass('selected');
-    $('.main-partner .contents ul li:eq(0)').addClass('selected');
-  });
-  
+    $('.main-partner .contents ul li:eq(' + n + ')').addClass('selected');
+  }
   </script>
 </body>
 </html>
