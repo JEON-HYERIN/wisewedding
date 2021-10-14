@@ -486,24 +486,34 @@
 
   <script>
     var imageLength = $('.main-partner .contents ul li').length - 1;
-    var imageFirst = 0;
+    var imagePrev = 0;
     var imageNext = 0;
+    var imageNow = 0;
+    var imageFirst = 0;
+    var timerId = '';
     var timerSpeed = 2000;
-    var timerId = setInterval(function () {
-      showImage(imageNext);
-    }, timerSpeed);
-    
-    showImage(imageFirst);
-    setInterval(timerId);
-  $('.main-partner .contents ul li a').on('click', function () {
-    showImage(imageNext);
-  }); 
+    var isTimerOn = true;
 
-  function showImage(n) {
-    imageFirst = 0;
-    imageNext = (n === imageLength) ? imageFirst : (n + 1);
+    showImage(imageFirst);
+
+  $('.main-partner .contents ul li a').on('mouseenter focus', function () {
+    var index = $('.main-partner .contents ul li').index($(this).parent());
+    showImage(index);
+  });
+
+  function showImage(index) {
     $('.main-partner .contents ul li').removeClass('selected');
-    $('.main-partner .contents ul li:eq(' + n + ')').addClass('selected');
+    $('.main-partner .contents ul li:eq(' + index + ')').addClass('selected');
+    imageNow = index;
+    imagePrev = (index === 0) ? imageLength : (index - 1); 
+    imageNext = (index === imageLength) ? 0 : (index + 1);
+
+    if(isTimerOn === true) {
+      clearTimeout(timerId);
+      timerId = setTimeout(function () {
+        showImage(imageNext);
+      }, timerSpeed);
+    }
   }
   </script>
 </body>
