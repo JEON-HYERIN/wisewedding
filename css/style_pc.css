@@ -200,19 +200,18 @@ body.main p:not(.main-visual p) {
   height: 100%;
   z-index: 9;
   background-color: #fff;
-}
-
-.gnb-wrapper.open #gnb {
-  
+  overflow-y: auto;
 }
 
 #gnb > ul {
+  position: relative;
   padding: 40px 60px;
 }
 
 #gnb > ul > li {
   display: inline-block;
-  width: 30%;
+  /* width: 30%; */
+  width: calc(33.33% - 5px);
   min-height: 300px;
   height: 40%;
   vertical-align: top;
