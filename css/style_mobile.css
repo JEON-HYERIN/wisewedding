@@ -725,7 +725,7 @@ body.main p:not(.main-visual p) {
 .contact .input-group label {
   position: relative;
   color: #212121;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 500;
 }
 
@@ -750,6 +750,7 @@ body.main p:not(.main-visual p) {
 }
 
 .contact label[for="check"] {
+  font-size: 13px;
   color: #888;
 }
 
