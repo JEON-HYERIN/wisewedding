@@ -788,9 +788,11 @@ body.main p:not(.main-visual p) {
 }
 
 .contact .description {
+  max-width: 400px;
   margin-top: 5px;
   color: #888;
   line-height: 1.9em;
+  word-break: keep-all;
 }
 
 .contact .input-group > div {
@@ -808,6 +810,7 @@ body.main p:not(.main-visual p) {
   position: relative;
   color: #212121;
   font-size: 14px;
+  font-weight: 500;
 }
 
 .contact .input-group label[for="userName"]::after,
@@ -816,7 +819,7 @@ body.main p:not(.main-visual p) {
 }
 
 .contact .input-group input {
-  font-family: 'Noto Serif KR', serif;
+  font-family: inherit;
   width: 100%;
   margin-top: 10px;
   font-size: 13px;

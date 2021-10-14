@@ -735,7 +735,7 @@ body.main p:not(.main-visual p) {
 }
 
 .contact .input-group input {
-  font-family: 'Noto Serif KR', serif;
+  font-family: inherit;
   width: 100%;
   margin-top: 10px;
   font-size: 13px;
