@@ -46,7 +46,7 @@
   <script defer src="./js/swiper.js"></script>
   <script defer src="./js/common.js"></script>    
 </head>
-<body class="main">
+<body class="sub">
   <div id="wrapper">
     <a href="#main" id="skip-nav">본문 바로가기</a>
 
@@ -60,55 +60,60 @@
           <div></div>
           <div></div>
         </a>
-        <nav id="gnb">
-          <h2 class="hide">메인 메뉴</h2>
-          <ul>
-            <li>
-              <a href="#">PORTFOLIO</a>
-              <ul class="sub-menu">
-                <li><a href="#">PROJECT</a></li>
-                <li><a href="#">CELEBRITY</a></li>
-                <li><a href="#">STYLING</a></li>
-              </ul>
-            </li>
-            <li><a href="#">PLANNER</a></li>
-            <li><a href="#">VENUE</a></li>
-            <li>
-              <a href="#">COLLECTION</a>
-              <ul class="sub-menu">
-                <li><a href="#">WEDDING SNAP</a></li>
-                <li><a href="#">STUDIO</a></li>
-                <li><a href="#">WEDDING DVD</a></li>
-                <li><a href="#">DRESS</a></li>
-                <li><a href="#">HAIR &amp; MAKE UP</a></li>
-                <li><a href="#">OTHERS</a></li>
-              </ul>
-            </li>
-            <li><a href="#">EVENT</a></li>
-            <li>
-              <a href="#">COMPANY</a>
-              <ul class="sub-menu">
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">LOCATION</a></li>
-                <li><a href="#">NOTICE</a></li>
-                <li><a href="#">PARTNERSHIP</a></li>
-                <li><a href="#">RECRUIT</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="#">CONTACT</a>
-              <ul class="sub-menu">
-                <li><a href="#">실시간 웨딩홀 예약</a></li>
-                <li><a href="#">웨딩홀 리포트 요청</a></li>
-                <li><a href="#">웨딩 스타일링 문의</a></li>
-                <li><a href="#">웨딩 패키지 견적 문의</a></li>
-                <li><a href="#">방문 상담 신청</a></li>
-                <li><a href="#">문의하기</a></li>
-              </ul>
-            </li>
-
-          </ul>
-        </nav>
+        <a href="#" class="close-btn invisible">
+          <div class="material-icons">close</div>
+          <span class="hide">닫기 버튼</span>
+        </a>
+        <div class="gnb-wrap">
+          <nav id="gnb">
+            <h2 class="hide">메인 메뉴</h2>
+            <ul>
+              <li>
+                <a href="#">PORTFOLIO</a>
+                <ul class="sub-menu">
+                  <li><a href="#">PROJECT</a></li>
+                  <li><a href="#">CELEBRITY</a></li>
+                  <li><a href="#">STYLING</a></li>
+                </ul>
+              </li>
+              <li><a href="#">PLANNER</a></li>
+              <li class="venue"><a href="#">VENUE</a></li>
+              <li>
+                <a href="#">COLLECTION</a>
+                <ul class="sub-menu">
+                  <li><a href="#">WEDDING SNAP</a></li>
+                  <li><a href="#">STUDIO</a></li>
+                  <li><a href="#">WEDDING DVD</a></li>
+                  <li><a href="#">DRESS</a></li>
+                  <li><a href="#">HAIR &amp; MAKE UP</a></li>
+                  <li><a href="#">OTHERS</a></li>
+                </ul>
+              </li>
+              <li><a href="#">EVENT</a></li>
+              <li>
+                <a href="#">COMPANY</a>
+                <ul class="sub-menu">
+                  <li><a href="#">ABOUT</a></li>
+                  <li><a href="#">LOCATION</a></li>
+                  <li><a href="#">NOTICE</a></li>
+                  <li><a href="#">PARTNERSHIP</a></li>
+                  <li><a href="#">RECRUIT</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">CONTACT</a>
+                <ul class="sub-menu">
+                  <li><a href="#">실시간 웨딩홀 예약</a></li>
+                  <li><a href="#">웨딩홀 리포트 요청</a></li>
+                  <li><a href="#">웨딩 스타일링 문의</a></li>
+                  <li><a href="#">웨딩 패키지 견적 문의</a></li>
+                  <li><a href="#">방문 상담 신청</a></li>
+                  <li><a href="#">문의하기</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
         <ul class="header__menu">
           <li><a href="#">PORTFOLIO</a></li>
           <li><a href="#">PLANNER</a></li>
@@ -127,10 +132,10 @@
         <h2 class="hide">비주얼 영역</h2>
         <div class="inner">
 
-          <div class="title">
-            <em>Contact</em><br />
+          <h3 class="title">
+            Contact
             <span>ASK ANYTHING</span>
-          </div>
+          </h3>
         </div>
       </section>
 
@@ -140,7 +145,7 @@
         <div class="inner">
 
           <div class="text-group">
-            <h3 class="title">방문상담 신청</h3>
+            <em class="title">방문상담 신청</em>
             <p class="description">
               원하는 날짜와 시간을 남겨주시면 와이즈웨딩 플래너가 상담 <br class="only-pc" /> 예약을 도와드립니다. 웨딩전문가, 와이즈웨딩 플래너에게<br class="only-pc" /> 무엇이든 물어보세요.
             </p>
@@ -153,18 +158,21 @@
             </div>
             <div>
               <label for="userNumber">연락처</label>
-              <input type="tel" id="userNumber" placeholder="연락처를 입력해주세요">
+              <input type="tel" id="userNumber" placeholder="연락처를 입력해주세요" />
             </div>
             <div>
               <label for="userDate">날짜 및 시간</label>
-              <input type="text" id="userDate" placeholder="상담을 원하는 날짜 및 시간을 입력해주세요">
+              <input type="text" id="userDate" placeholder="상담을 원하는 날짜 및 시간을 입력해주세요" />
             </div>
             <div>
               <label for="userPlanner">웨딩플래너</label>
-              <input type="text" id="userPlanner" placeholder="상담을 원하는 웨딩플래너가 있다면 입력해주세요">             
+              <input type="text" id="userPlanner" placeholder="상담을 원하는 웨딩플래너가 있다면 입력해주세요" />             
             </div>
-
-            
+              <input type="checkbox" id="check" />
+              <label for="check">
+                <a href="#">개인정보 처리방침</a>을 읽었으며 내용에 동의합니다.
+              </label>
+            <a href="#" class="btn">문의하기</a>
           </div>
         </div>
       </section>
