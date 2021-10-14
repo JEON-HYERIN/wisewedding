@@ -223,7 +223,7 @@ body.main p:not(.main-visual p) {
 #gnb > ul > li {
   display: inline-block;
   width: calc((100% / 2) - 5px);
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   vertical-align: top;
 } 
 
@@ -234,7 +234,7 @@ body.main p:not(.main-visual p) {
 }
 
 #gnb > ul > li > a {
-  font-size: 16px;
+  font-size: 15px;
   letter-spacing: 1px;
   color: #222;
 } 
@@ -249,7 +249,7 @@ body.main p:not(.main-visual p) {
 #gnb > ul > li > .sub-menu li {} 
 
 #gnb > ul > li > .sub-menu li a {
-  font-size: 14px;
+  font-size: 13px;
   color: #888;
 } 
 
