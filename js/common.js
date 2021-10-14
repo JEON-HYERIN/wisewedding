@@ -17,16 +17,16 @@ window.addEventListener('scroll', function () {
 // toggle-btn, close-btn
 var toggleBtn = header.querySelector('.toggle-btn');
 var closeBtn = header.querySelector('.close-btn');
-var gnbWrapper = header.querySelector('.gnb-wrapper');
+var gnbWrap = header.querySelector('.gnb-wrap');
 
 toggleBtn.addEventListener('click', function () {
-  gnbWrapper.classList.add('open');
+  gnbWrap.classList.add('open');
   toggleBtn.classList.add('invisible');
   closeBtn.classList.remove('invisible');
 });
 
 closeBtn.addEventListener('click', function () {
-  gnbWrapper.classList.remove('open');
+  gnbWrap.classList.remove('open');
   toggleBtn.classList.remove('invisible');
   closeBtn.classList.add('invisible');
 });

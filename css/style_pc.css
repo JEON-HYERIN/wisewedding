@@ -168,7 +168,7 @@ body.main p:not(.main-visual p) {
   font-size: 35px;
 }
 
-.gnb-wrapper {
+.gnb-wrap {
   position: fixed;
   height: 100%;
   width: 100%;
@@ -178,11 +178,11 @@ body.main p:not(.main-visual p) {
   display: none;
 }
 
-.gnb-wrapper.open {
+.gnb-wrap.open {
   display: block;
 }
 
-.gnb-wrapper::before {
+.gnb-wrap::before {
   content: '';
   position: absolute;
   left: 0;
