@@ -752,7 +752,6 @@ body.main p:not(.main-visual p) {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  
 }
 
 .contact-visual .title span {
@@ -764,12 +763,13 @@ body.main p:not(.main-visual p) {
 
 /* CONTACT */
 .contact {
-  padding: 80px;
   background-color: #f0f0ee;
   border-top: 1px solid #ddd;
 }
 
-.contact .inner {}
+.contact .inner {
+  padding: 80px;
+}
 
 .contact .text-group,
 .contact .input-group {
@@ -792,8 +792,6 @@ body.main p:not(.main-visual p) {
   color: #888;
   line-height: 1.9em;
 }
-
-.contact .input-group {}
 
 .contact .input-group > div {
   padding: 20px;
@@ -818,6 +816,7 @@ body.main p:not(.main-visual p) {
 }
 
 .contact .input-group input {
+  font-family: 'Noto Serif KR', serif;
   width: 100%;
   margin-top: 10px;
   font-size: 13px;
@@ -825,11 +824,6 @@ body.main p:not(.main-visual p) {
   outline: none;
   color: #bf8365;
 }
-
-.contact input[type="text"] {}
-
-.contact input[type="text"],
-.contact input[type="tel"] {}
 
 .contact input[type="checkbox"] {
   width: 14px;

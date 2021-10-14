@@ -660,6 +660,114 @@ body.main p:not(.main-visual p) {
 }
 
 
+/* contact.html */
+/* VISUAL */
+.contact-visual {
+  background: url("../img/contact/visual_bg.jpg") no-repeat center/cover;
+  text-align: center;
+}
+
+.contact-visual .inner {
+  height: 450px;
+}
+
+.contact-visual .title {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.contact-visual .title span {
+  display: block;
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: #555;
+}
+
+/* CONTACT */
+.contact {
+  background-color: #f0f0ee;
+  border-top: 1px solid #ddd;
+}
+
+.contact .inner {
+  padding: 24px;
+}
+
+.contact .text-group {
+  font-size: 15px;
+}
+
+.contact .title {
+  font-weight: 500;
+  color: #222;
+}
+
+.contact .description {
+  margin: 5px 0 20px;
+  color: #888;
+  line-height: 1.9em;
+  word-break: keep-all;
+}
+
+.contact .input-group > div {
+  padding: 12px;
+  margin-bottom: 12px;
+  background-color: #fff;
+  border: 1px solid transparent;
+}
+
+.contact .input-group > div:hover {
+  border-color: #bf8365;
+}
+
+.contact .input-group label {
+  position: relative;
+  color: #212121;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.contact .input-group label[for="userName"]::after,
+.contact .input-group label[for="userNumber"]::after {
+  content: '*';
+}
+
+.contact .input-group input {
+  font-family: 'Noto Serif KR', serif;
+  width: 100%;
+  margin-top: 10px;
+  font-size: 13px;
+  border: none;
+  outline: none;
+  color: #bf8365;
+}
+
+.contact input[type="checkbox"] {
+  width: 14px;
+  height: 14px;
+}
+
+.contact label[for="check"] {
+  color: #888;
+}
+
+.contact label[for="check"] a {
+  text-decoration: underline;
+  color: #212121;
+}
+
+.contact .input-group .btn {
+  display: block;
+  margin-top: 30px;
+  padding: 10px 0;
+  font-size: 14px;
+  background-color: #bf8365;
+  color: #fff;
+}
+
+
 
 
 /* 미디어쿼리 */
