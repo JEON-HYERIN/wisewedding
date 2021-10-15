@@ -246,8 +246,26 @@ body.main p:not(.main-visual p) {
 }
 
 #header .header__menu li {
+  position: relative;
   display: inline-block;
   letter-spacing: 2px;
+}
+
+#header .header__menu li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -30px;
+  background: url("../img/gnb_now_icon.svg") no-repeat center;
+  width: 0;
+  height: 100%;
+  opacity: 0;
+  transition: .4s;
+}
+
+#header .header__menu li.active::before {
+  opacity: 1;
+  width: 100%;
 }
 
 #header .header__menu li + li {

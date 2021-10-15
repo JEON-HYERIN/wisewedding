@@ -14,6 +14,12 @@ window.addEventListener('scroll', function () {
   }
 });
 
+$('#header .header__menu li a').on('click', function () {
+  var index = $('#header .header__menu li').index($(this).parent());
+  $('#header .header__menu li').removeClass('active');
+  $('#header .header__menu li:eq(' + index + ')').addClass('active');
+});
+
 // toggle-btn, close-btn
 var toggleBtn = header.querySelector('.toggle-btn');
 var closeBtn = header.querySelector('.close-btn');
@@ -45,3 +51,4 @@ window.addEventListener('scroll', function () {
 arrowUp.addEventListener('click', function () {
   wrapper.scrollIntoView({behavior: 'smooth'});
 });
+
