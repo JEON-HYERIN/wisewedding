@@ -825,6 +825,8 @@ body.main p:not(.main-visual p) {
 }
 
 .portfolio-styling .detail {
+  width: 100%;
+  max-width: 640px;
   margin: 24px 0;
   font-size: 15px;
   line-height: 1.8em;
@@ -859,7 +861,7 @@ body.main p:not(.main-visual p) {
 }
 
 .portfolio-styling .pagination {
-  padding: 35px 0 11px;
+  margin: 35px 0 11px;
   text-align: center;
 }
 

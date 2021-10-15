@@ -940,6 +940,7 @@ body.main p:not(.main-visual p) {
 
 .portfolio-styling .detail {
   width: 50%;
+  max-width: 640px;
   margin: 40px 0 80px;
   font-size: 17px;
   line-height: 1.8em;
@@ -955,9 +956,12 @@ body.main p:not(.main-visual p) {
   display: inline-block;
   width: calc(33% - 5px);
   padding: 0 15px;
-  margin-bottom: 48px;
   box-sizing: border-box;
   cursor: pointer;
+}
+
+.portfolio-styling .images > div + div {
+  margin-top: 48px;
 }
 
 .portfolio-styling .image {
@@ -977,7 +981,7 @@ body.main p:not(.main-visual p) {
 }
 
 .portfolio-styling .pagination {
-  padding: 60px 0 20px;
+  margin: 80px 0 20px;
 }
 
 .portfolio-styling .pagination a {
