@@ -872,6 +872,63 @@ body.main p:not(.main-visual p) {
 }
 
 
+/* portfolio.html */
+/* VISUAL */
+.portfolio-visual {
+  background-color: #f7f5ef;
+}
+
+.portfolio-visual .inner {
+  max-width: none;
+  overflow: hidden;
+  height: 769px;
+}
+
+.portfolio-visual h3,
+.portfolio-visual .image {
+  float: left;
+  width: 50%;
+  height: 100%;
+}
+
+.portfolio-visual h3 {
+  padding-left: 45px;
+  line-height: 769px;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+.portfolio-visual .image {
+  background: url("../img/portfolio/visual_img.jpg") no-repeat center/cover;
+}
+
+
+/* STYLING */
+.portfolio-styling {}
+
+.portfolio-styling .inner {}
+
+.portfolio__menu {}
+
+.portfolio__menu li {}
+
+.portfolio__menu li a {}
+
+.portfolio-styling > div > .btn {}
+
+.portfolio-styling .detail {}
+
+.portfolio-styling .images {}
+
+.portfolio-styling .images > div {}
+
+.portfolio-styling .image {}
+.portfolio-styling .image img {}
+.portfolio-styling .image .view-more {}
+.portfolio-styling .image .view-more span {}
+
+.portfolio-styling .images .caption {}
+.portfolio-styling .images .caption span {}
 
 
 
