@@ -953,7 +953,7 @@ body.main p:not(.main-visual p) {
 
 .portfolio-styling .images > div {
   display: inline-block;
-  width: calc(33% - 20px);
+  width: calc(33% - 5px);
   padding: 0 15px;
   margin-bottom: 48px;
   box-sizing: border-box;
