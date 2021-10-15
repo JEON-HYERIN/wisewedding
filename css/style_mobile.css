@@ -787,15 +787,15 @@ body.main p:not(.main-visual p) {
 }
 
 /* STYLING */
+.portfolio-styling {
+  background-color: #fff;
+}
+
 .portfolio-styling .inner {
   padding: 24px;
 }
 
 .portfolio-styling .inner > div {
-
-}
-
-.portfolio__menu {
 
 }
 
@@ -876,10 +876,6 @@ body.main p:not(.main-visual p) {
   transition: .3s;
 }
 
-.portfolio-styling .pagination a:hover {
-  color: #bf8365;
-}
-
 .portfolio-styling .pagination a.active {
   color: #bf8365;
   border-bottom: 1px solid #bf8365;
@@ -889,6 +885,7 @@ body.main p:not(.main-visual p) {
   width: 20px;
   height: 40px;
 }
+
 
 
 /* 미디어쿼리 */

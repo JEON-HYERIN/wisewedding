@@ -112,6 +112,40 @@ body.main p:not(.main-visual p) {
   animation: rotate-image 30s linear infinite;
 }
 
+.sub .visual {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
+
+.sub .visual .inner {
+  height: 450px;
+}
+
+.sub .visual .title {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.sub .visual .title span {
+  display: block;
+  font-size: 16px;
+  letter-spacing: 7px;
+  color: #888;
+}
+
+.sub .detail {
+  width: 50%;
+  max-width: 640px;
+  font-size: 17px;
+  line-height: 1.8em;
+  word-break: keep-all;
+  color: #888;
+}
+
 @keyframes rotate-image {
   100% {
     transform: rotate(360deg);
@@ -270,6 +304,11 @@ body.main p:not(.main-visual p) {
   position: relative;
   display: inline-block;
   letter-spacing: 2px;
+  transition: .4s;
+}
+
+#header .header__menu li.active {
+  color: #bf8365;
 }
 
 #header .header__menu li::before {
@@ -757,26 +796,7 @@ body.main p:not(.main-visual p) {
 /* contact.html */
 /* VISUAL */
 .contact-visual {
-  background: url("../img/contact/visual_bg.jpg") no-repeat center/cover;
-  text-align: center;
-}
-
-.contact-visual .inner {
-  height: 450px;
-}
-
-.contact-visual .title {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.contact-visual .title span {
-  display: block;
-  font-size: 16px;
-  letter-spacing: 7px;
-  color: #888;
+  background-image: url("../img/contact/visual_bg.jpg");
 }
 
 /* CONTACT */
@@ -903,6 +923,10 @@ body.main p:not(.main-visual p) {
 }
 
 /* STYLING */
+.portfolio-styling {
+  background-color: #fff;
+}
+
 .portfolio-styling .inner {
   padding: 80px;
 }
@@ -939,13 +963,7 @@ body.main p:not(.main-visual p) {
 }
 
 .portfolio-styling .detail {
-  width: 50%;
-  max-width: 640px;
   margin: 40px 0 80px;
-  font-size: 17px;
-  line-height: 1.8em;
-  word-break: keep-all;
-  color: #888;
 }
 
 .portfolio-styling .images {
@@ -1008,6 +1026,89 @@ body.main p:not(.main-visual p) {
   width: 20px;
   height: 40px;
 }
+
+
+/* planner.html */
+/* VISUAL */
+.planner-visual {
+  background-image: url("../img/planner/visual_bg.jpg");
+}
+
+.planner-visual .inner {}
+
+/* PLANNER */
+.planner {
+  background-color: #fff;
+}
+
+.planner .inner {
+  padding: 80px;
+}
+
+.planner .detail {
+  padding-bottom: 80px;
+}
+
+.planner .images {}
+
+.planner .images > div {
+  width: 48%;
+  display: inline-block;
+  padding: 0 16px;
+  margin-bottom: 48px;
+  vertical-align: top;
+  box-sizing: border-box;
+}
+
+.planner .images .image,
+.planner .content-group {
+  display: inline-block;
+}
+
+.planner .image {
+  width: 45%;
+  margin-right: 3%;
+  vertical-align: top;
+}
+
+.planner .image img {}
+
+.planner .content-group {
+  width: 50%;
+}
+
+.planner .content-group .title {}
+
+.planner .content-group .title span {
+  font-size: 18px;
+  color: #212121;
+}
+.planner .content-group .title a {
+
+}
+
+.planner .content-group .title a img {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  vertical-align: top;
+}
+
+.planner .content-group .description {
+  margin: 3px 0 20px;
+  color: #888;
+  font-size: 15px;
+  line-height: 1.8em;
+}
+
+.planner .content-group .btn {
+  display: block;
+}
+
+.planner .content-group .btn + .btn {
+  margin-top: 8px;
+}
+
 
 
 
