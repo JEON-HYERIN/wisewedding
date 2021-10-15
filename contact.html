@@ -151,18 +151,18 @@
             </p>
           </div>
 
-          <div class="input-group">
+          <form action="#" class="input-group">
             <div>
               <label for="userName">이름</label>
-              <input type="text" id="userName" placeholder="이름을 입력해주세요">
+              <input type="text" id="userName" placeholder="이름을 입력해주세요" required autofocus>
             </div>
             <div>
               <label for="userNumber">연락처</label>
-              <input type="tel" id="userNumber" placeholder="연락처를 입력해주세요" />
+              <input type="tel" id="userNumber" placeholder="연락처를 입력해주세요" required />
             </div>
             <div>
               <label for="userDate">날짜 및 시간</label>
-              <input type="text" id="userDate" placeholder="상담을 원하는 날짜 및 시간을 입력해주세요" />
+              <input type="text" id="userDate" placeholder="상담을 원하는 날짜 및 시간을 입력해주세요" required />
             </div>
             <div>
               <label for="userPlanner">웨딩플래너</label>
@@ -172,8 +172,8 @@
               <label for="check">
                 <a href="#">개인정보 처리방침</a>을 읽었으며 내용에 동의합니다.
               </label>
-            <a href="#" class="btn">문의하기</a>
-          </div>
+            <input type="submit" value="문의하기" class="btn" />
+        </form>
         </div>
       </section>
     </main>
