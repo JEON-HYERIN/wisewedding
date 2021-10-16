@@ -66,7 +66,7 @@ function setImageSlide (selector, first, status, speed) {
   var isTimerOn = status;
 
   $(selector).find('.slide-menu .slide').each(function (index) {
-    $(selector).find('.pagination').append('<li><a href="#">' + (index + 1) +'</li></a>\n');
+    $(selector).find('.pagination').append('<li><a href="#">' + (index + 1) +'</a></li>\n');
     $(this).css({
       'left': (index * 100) + '%'
     });

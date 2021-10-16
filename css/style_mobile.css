@@ -416,25 +416,11 @@ h3 {
 
 /* MAIN */
 .main-visual .image-slide {
-  position: relative;
   width: 100%;
   height: 100vh;
 }
 
-.main-visual .image-slide .slide-menu {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.main-visual .image-slide .slide-menu .slide {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
+.main-visual .image-slide .slide {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -494,7 +480,10 @@ h3 {
 
 .main-visual .image-slide .pagination li {
   display: inline-block;
-  margin: 0 2px;
+}
+
+.main-visual .image-slide .pagination li + li {
+  margin-left: 2px;
 }
 
 .main-visual .image-slide .pagination li a {

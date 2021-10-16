@@ -81,3 +81,24 @@ i[class^="fa"] span {
   top: 0;
 }
 
+/* SLIDE */
+.image-slide {
+  position: relative;
+}
+
+.image-slide .slide-menu {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.image-slide .slide-menu .slide {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
