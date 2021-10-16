@@ -128,7 +128,7 @@
     <main id="main">
 
       <!-- VISUAL -->
-      <section class="main-visual">
+      <!-- <section class="main-visual">
         <h2 class="hide">비주얼 영역</h2>
         <div class="swiper">
           <div class="swiper-wrapper">
@@ -167,6 +167,48 @@
             </div>
           </div>
           <div class="swiper-pagination"></div>
+        </div>
+      </section> -->
+      <section class="main-visual">
+        <h2 class="hide">비주얼 영역</h2>
+        <div class="image-slide">
+            <ul class="slide-menu">
+              <li class="slide slide1">
+                <div class="text-group">
+                  <div class="title">I AM HAPPY, TOO!</div>
+                  <p class="description">
+                    당신의 행복이 와이즈웨딩의 행복입니다.<br />
+                    웨딩전문가그룹 와이즈웨딩
+                  </p>
+                </div>
+              </li>
+              <li class="slide slide2">
+                <div class="text-group">
+                  <div class="title">웨딩의 첫 걸음</div>
+                  <p class="description">
+                    와이즈웨딩의 웨딩홀 검색 시스템을<br class="only-m" /> 만나보세요.
+                  </p>
+                </div>
+              </li>
+              <li class="slide slide3">
+                <div class="text-group">
+                  <div class="title">차별화된 웨딩스타일</div>
+                  <p class="description">
+                    웨딩전문가의 스타일링 상담을<br class="only-m" /> 받아보세요.
+                  </p>
+                </div>
+              </li>
+              <li class="slide slide4">
+                <div class="text-group">
+                  <div class="title">실력과 진심으로</div>
+                  <p class="description">
+                    와이즈웨딩과 함께 성장할 와이즈인을<br class="only-m" /> 찾습니다.
+                  </p>
+                </div>
+              </li>
+            </ul>
+
+          <ul class="pagination"></ul>
         </div>
       </section>
 
@@ -490,6 +532,8 @@
   </div>
 
   <script>
+  repeatImage ();
+  function repeatImage () {
     var imageLength = $('.main-partner .contents ul li').length - 1;
     var imagePrev = 0;
     var imageNext = 0;
@@ -501,25 +545,27 @@
 
     showImage(imageFirst);
 
-  $('.main-partner .contents ul li a').on('mouseenter focus', function () {
-    var index = $('.main-partner .contents ul li').index($(this).parent());
-    showImage(index);
-  });
+    $('.main-partner .contents ul li a').on('mouseenter focus', function () {
+      var index = $('.main-partner .contents ul li').index($(this).parent());
+      showImage(index);
+    });
 
-  function showImage(index) {
-    $('.main-partner .contents ul li').removeClass('selected');
-    $('.main-partner .contents ul li:eq(' + index + ')').addClass('selected');
-    imageNow = index;
-    imagePrev = (index === 0) ? imageLength : (index - 1); 
-    imageNext = (index === imageLength) ? 0 : (index + 1);
+    function showImage(index) {
+      $('.main-partner .contents ul li').removeClass('selected');
+      $('.main-partner .contents ul li:eq(' + index + ')').addClass('selected');
+      imageNow = index;
+      imagePrev = (index === 0) ? imageLength : (index - 1); 
+      imageNext = (index === imageLength) ? 0 : (index + 1);
 
-    if(isTimerOn === true) {
-      clearTimeout(timerId);
-      timerId = setTimeout(function () {
-        showImage(imageNext);
-      }, timerSpeed);
+      if(isTimerOn === true) {
+        clearTimeout(timerId);
+        timerId = setTimeout(function () {
+          showImage(imageNext);
+        }, timerSpeed);
+      }
     }
   }
+  
   </script>
 </body>
 </html>

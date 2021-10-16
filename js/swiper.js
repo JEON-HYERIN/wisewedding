@@ -1,17 +1,17 @@
 var bullet = ['1', '2', '3', '4'];
 
 // console.log(bullet)
-new Swiper('.main-visual .swiper', {
-  autoplay: true,
-  loop: true,
-  pagination: {
-    el: '.main-visual .swiper .swiper-pagination',
-    clickable: true,
-    renderBullet: function (index, className) {
-      return '<div class="' + className + '"><a href="#">' + (bullet[index]) + '</a></div>';
-    }
-  }
-})
+// new Swiper('.main-visual .swiper', {
+//   autoplay: true,
+//   loop: true,
+//   pagination: {
+//     el: '.main-visual .swiper .swiper-pagination',
+//     clickable: true,
+//     renderBullet: function (index, className) {
+//       return '<div class="' + className + '"><a href="#">' + (bullet[index]) + '</a></div>';
+//     }
+//   }
+// })
 
 new Swiper('.main-celebrity .swiper', {
   autoplay: true,

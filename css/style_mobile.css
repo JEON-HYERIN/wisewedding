@@ -415,34 +415,45 @@ h3 {
 }
 
 /* MAIN */
-.main-visual {
+.main-visual .image-slide {
   position: relative;
-}
-.main-visual .swiper {
   width: 100%;
   height: 100vh;
 }
 
-.main-visual .swiper .swiper-slide {
+.main-visual .image-slide .slide-menu {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.main-visual .image-slide .slide-menu .slide {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
-.main-visual .swiper .swiper-slide.slide1 {
+.main-visual .image-slide .slide.slide1 {
   background-image: url("../img/visual_1_m.jpg");
 }
-.main-visual .swiper .swiper-slide.slide2 {
+.main-visual .image-slide .slide.slide2 {
   background-image: url("../img/visual_2_m.jpg");
 }
-.main-visual .swiper .swiper-slide.slide3 {
+.main-visual .image-slide .slide.slide3 {
   background-image: url("../img/visual_3_m.jpg");
 }
-.main-visual .swiper .swiper-slide.slide4 {
+.main-visual .image-slide .slide.slide4 {
   background-image: url("../img/visual_4_m.jpg");
 }
 
-.main-visual .swiper .swiper-slide .text-group {
+.main-visual .image-slide .slide .text-group {
   position: absolute;
   left: 24px;
   top: 40%;
@@ -450,14 +461,14 @@ h3 {
   cursor: pointer;
 }
 
-.main-visual .swiper .swiper-slide .text-group .title {
+.main-visual .image-slide .slide .text-group .title {
   font-size: 30px;
   line-height: 1.6em;
   transform: translateY(150px);
   transition: .7s;
 }
 
-.main-visual .swiper .swiper-slide .text-group .description {
+.main-visual .image-slide .slide .text-group .description {
   font-size: 16px;
   line-height: 1.6em;
   transform: translateY(150px);
@@ -465,46 +476,42 @@ h3 {
   transition-delay: .2s;
 }
 
-.main-visual .swiper .swiper-slide-active .text-group .title {
+.main-visual .image-slide .slide.active .text-group .title {
   transform: translateY(0); 
 }
 
-.main-visual .swiper .swiper-slide-active .text-group .description {
+.main-visual .image-slide .slide.active .text-group .description {
   transform: translateY(0); 
 }
 
-.main-visual .swiper .swiper-pagination {
+.main-visual .image-slide .pagination {
+  position: absolute;
   left: 24px;
   bottom: 40px;
   width: 300px;
   text-align: left;
 }
 
-.main-visual .swiper .swiper-pagination-bullet {
-  background-color: transparent;
-  opacity: 1;
+.main-visual .image-slide .pagination li {
+  display: inline-block;
+  margin: 0 2px;
 }
 
-.main-visual .swiper .swiper-pagination-bullet {
+.main-visual .image-slide .pagination li a {
+  display: block;
   width: 30px;
-  height: 30px;
-  margin: 0 4px;
+  line-height: 30px;
+  text-align: center;
   border-radius: 50%;
   border: 1px solid transparent;
-}
-
-.main-visual .swiper .swiper-pagination-bullet a {
-  display: block;
-  text-align: center;
-  line-height: 30px;
   transition: .2s;
 }
 
-.main-visual .swiper .swiper-pagination-bullet a:hover {
+.main-visual .image-slide .pagination li a:hover {
   color: #bf8365;
 }
 
-.main-visual .swiper .swiper-pagination-bullet-active {
+.main-visual .image-slide .pagination li.active a {
   border-color: #bf8365;
   color: #bf8365;
 }
