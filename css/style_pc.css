@@ -140,7 +140,7 @@ body.main p:not(.main-visual p) {
 .sub .detail {
   width: 50%;
   max-width: 640px;
-  font-size: 17px;
+  font-size: 18px;
   line-height: 1.8em;
   word-break: keep-all;
   color: #888;
@@ -949,7 +949,7 @@ body.main p:not(.main-visual p) {
 }
 
 .portfolio__menu li a {
-  font-size: 25px;
+  font-size: 26px;
   font-weight: 500;
   color: #222;
 }
@@ -1009,7 +1009,7 @@ body.main p:not(.main-visual p) {
   margin: 0 2px;
   vertical-align: middle;
   color: #888;
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 500;
   transition: .3s;
 }
