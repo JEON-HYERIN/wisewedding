@@ -396,7 +396,7 @@ body.main p:not(.main-visual p) {
 #footer .info {
   float: right;
   font-size: 15px;
-  line-height: 1.9em;
+  line-height: 1.8em;
   color: #888;
 }
 
@@ -1039,8 +1039,6 @@ body.main p:not(.main-visual p) {
   padding-bottom: 80px;
 }
 
-.planner .images {}
-
 .planner .images > div {
   width: 48%;
   display: inline-block;
@@ -1061,20 +1059,13 @@ body.main p:not(.main-visual p) {
   vertical-align: top;
 }
 
-.planner .image img {}
-
 .planner .content-group {
   width: 50%;
 }
 
-.planner .content-group .title {}
-
 .planner .content-group .title span {
   font-size: 20px;
   color: #212121;
-}
-.planner .content-group .title a {
-
 }
 
 .planner .content-group .title a img {
