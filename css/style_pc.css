@@ -99,6 +99,10 @@ body.main p:not(.main-visual p) {
   background-color: #bf8365;
 }
 
+.caption span {
+  font-size: 18px;
+}
+
 .contact-btn {
   position: fixed;
   right: 5%;
@@ -818,7 +822,7 @@ body.main p:not(.main-visual p) {
 }
 
 .contact .text-group {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .contact .title {
@@ -827,10 +831,10 @@ body.main p:not(.main-visual p) {
 }
 
 .contact .description {
-  max-width: 400px;
+  max-width: 500px;
   margin-top: 5px;
   color: #888;
-  line-height: 1.9em;
+  line-height: 1.8em;
   word-break: keep-all;
 }
 
@@ -848,7 +852,7 @@ body.main p:not(.main-visual p) {
 .contact .input-group label {
   position: relative;
   color: #212121;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 500;
 }
 
@@ -861,7 +865,7 @@ body.main p:not(.main-visual p) {
   font-family: inherit;
   width: 100%;
   margin-top: 10px;
-  font-size: 13px;
+  font-size: 14px;
   border: none;
   outline: none;
   color: #bf8365;
@@ -887,7 +891,6 @@ body.main p:not(.main-visual p) {
   width: 200px;
   margin-top: 30px;
   padding: 10px 0;
-  font-size: 14px;
   background-color: #bf8365;
   color: #fff;
 }
@@ -993,10 +996,6 @@ body.main p:not(.main-visual p) {
 
 .portfolio-styling .images > div:hover .caption {
   color: #bf8365;
-}
-
-.portfolio-styling .images .caption span {
-  font-size: 18px;
 }
 
 .portfolio-styling .pagination {
