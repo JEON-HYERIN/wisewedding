@@ -116,6 +116,10 @@ body.main p:not(.main-visual p) {
   animation: rotate-image 30s linear infinite;
 }
 
+.sub section.main .inner {
+  padding: 80px;
+}
+
 .sub .visual {
   background-repeat: no-repeat;
   background-position: center;
@@ -810,10 +814,6 @@ body.main p:not(.main-visual p) {
   border-top: 1px solid #ddd;
 }
 
-.contact .inner {
-  padding: 80px;
-}
-
 .contact .text-group,
 .contact .input-group {
   display: inline-block;
@@ -931,10 +931,6 @@ body.main p:not(.main-visual p) {
   background-color: #fff;
 }
 
-.portfolio-styling .inner {
-  padding: 80px;
-}
-
 .portfolio-styling .inner > div {
   overflow: hidden;
 }
@@ -1034,15 +1030,9 @@ body.main p:not(.main-visual p) {
   background-image: url("../img/planner/visual_bg.jpg");
 }
 
-.planner-visual .inner {}
-
 /* PLANNER */
 .planner {
   background-color: #fff;
-}
-
-.planner .inner {
-  padding: 80px;
 }
 
 .planner .detail {
@@ -1080,7 +1070,7 @@ body.main p:not(.main-visual p) {
 .planner .content-group .title {}
 
 .planner .content-group .title span {
-  font-size: 18px;
+  font-size: 20px;
   color: #212121;
 }
 .planner .content-group .title a {
@@ -1098,11 +1088,13 @@ body.main p:not(.main-visual p) {
   margin: 3px 0 20px;
   color: #888;
   font-size: 15px;
-  line-height: 1.8em;
+  line-height: 1.6em;
 }
 
 .planner .content-group .btn {
   display: block;
+  padding: 0;
+  font-size: 14px;
 }
 
 .planner .content-group .btn + .btn {
