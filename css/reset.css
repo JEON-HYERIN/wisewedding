@@ -73,7 +73,7 @@ i[class^="fa"] span {
   background-color: rgba(0, 0, 0, .8);
   color: #fff;
   font-size: 16px;
-  z-index: 10;
+  z-index: 20;
   transition: .3s;
 }
 
