@@ -519,7 +519,7 @@ h3 {
   height: 30vh;
 }
 
-.main-planner .left .planner__logo {
+.main-planner__logo {
   position: relative;
   width: 100%;
   height: 100%;

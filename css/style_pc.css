@@ -586,7 +586,7 @@ body.main p:not(.main-visual p) {
   float: left;
 }
 
-.main-planner .left .planner__logo {
+.main-planner__logo {
   position: relative;
   width: 100%;
   height: 100%;
