@@ -1035,7 +1035,7 @@ body.main p:not(.main-visual p) {
   padding-bottom: 80px;
 }
 
-.planner .images > div {
+.planner .images li {
   width: 48%;
   display: inline-block;
   padding: 0 16px;
@@ -1044,8 +1044,7 @@ body.main p:not(.main-visual p) {
   box-sizing: border-box;
 }
 
-.planner .images .image,
-.planner .content-group {
+.planner .images li > div {
   display: inline-block;
 }
 
