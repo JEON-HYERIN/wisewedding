@@ -237,39 +237,22 @@ h3 {
   font-size: 35px;
 }
 
-.gnb-wrap {
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  left: 0;
-  top: 0;
-  z-index: 9;
-  display: none;
-}
-
-.gnb-wrap.open {
-  display: block;
-}
-
-.gnb-wrap::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
+.gnb-wrap.open #gnb {
+  right: 0;
+  pointer-events: auto;
 }
 
 #gnb {
   position: fixed;
-  right: 0;
+  right: -100%;
   top: 0;
   width: 100%;
   height: 100%;
   z-index: 9;
   background-color: #fff;
   overflow-y: auto;
+  pointer-events: none;
+  transition: right .5s;
 }
 
 #gnb > ul {

@@ -321,12 +321,21 @@ body.main p:not(.main-visual p) {
   width: 0;
   height: 100%;
   opacity: 0;
-  transition: .4s;
 }
 
 #header .header__menu li.active::before {
   opacity: 1;
   width: 100%;
+  animation: show-image .4s;
+}
+
+@keyframes show-image {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
 }
 
 #header .header__menu li + li {
