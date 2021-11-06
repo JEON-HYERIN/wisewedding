@@ -8,6 +8,26 @@ if (window.NodeList && !NodeList.prototype.forEach) {
   NodeList.prototype.forEach = Array.prototype.forEach;
 }
 
+const body = document.querySelector('body');
+var scrollPosition = 0;
+// 모달창 열기
+function enable() {
+  scrollPosition = window.pageYOffset;
+  body.style.overflow = 'hidden';
+  body.style.position = 'fixed';
+  body.style.top = `-${scrollPosition}px`;
+  body.style.width = '100%';
+}
+// 모달창 닫기
+function disable() {
+  body.style.removeProperty('overflow');
+  body.style.removeProperty('position');
+  body.style.removeProperty('top');
+  body.style.removeProperty('width');
+  window.scrollTo(0, scrollPosition);
+}
+
+// header영역
 var header = document.querySelector('#header');
 
 window.addEventListener('scroll', function () {
@@ -24,7 +44,7 @@ $('#header .header__menu li a').on('click', function () {
   $('#header .header__menu li:eq(' + index + ')').addClass('active');
 });
 
-// toggle-btn, close-btn
+// gnb영역
 var toggleBtn = header.querySelector('.toggle-btn');
 var closeBtn = header.querySelector('.close-btn');
 var gnbWrap = header.querySelector('.gnb-wrap');
@@ -33,12 +53,14 @@ toggleBtn.addEventListener('click', function () {
   gnbWrap.classList.add('open');
   toggleBtn.classList.add('invisible');
   closeBtn.classList.remove('invisible');
+  enable();
 });
 
 closeBtn.addEventListener('click', function () {
   gnbWrap.classList.remove('open');
   toggleBtn.classList.remove('invisible');
   closeBtn.classList.add('invisible');
+  disable();
 });
 
 // ARROW UP
@@ -56,7 +78,7 @@ arrowUp.addEventListener('click', function () {
   wrapper.scrollIntoView({behavior: 'smooth'});
 });
 
-// SLIDE
+// 이미지 슬라이드
 setImageSlide('.main-visual .image-slide', 1, true, 3000);
 
 function setImageSlide (selector, first, status, speed) {
@@ -104,7 +126,6 @@ function setImageSlide (selector, first, status, speed) {
     slideNow = index;
     slidePrev = (index === 1) ? numSlide : (index - 1);
     slideNext = (index === numSlide) ? 1 : (index + 1); 
-    // console.log(`slideNow: ${slideNow} / slidePrev: ${slidePrev} / slideNext: ${slideNext}`);
 
     if (isTimerOn === true) {
       clearTimeout(timerId);
