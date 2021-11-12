@@ -532,40 +532,98 @@
   </div>
 
   <script>
-  repeatImage ();
-  function repeatImage () {
-    var imageLength = $('.main-partner .contents ul li').length - 1;
-    var imagePrev = 0;
-    var imageNext = 0;
-    var imageNow = 0;
-    var imageFirst = 0;
-    var timerId = '';
-    var timerSpeed = 2000;
-    var isTimerOn = true;
+    repeatImage();
 
-    showImage(imageFirst);
+    function repeatImage() {
+      var imageLength = $('.main-partner .contents ul li').length - 1;
+      var imagePrev = 0;
+      var imageNext = 0;
+      var imageNow = 0;
+      var imageFirst = 0;
+      var timerId = '';
+      var timerSpeed = 2000;
+      var isTimerOn = true;
 
-    $('.main-partner .contents ul li a').on('mouseenter focus', function () {
-      var index = $('.main-partner .contents ul li').index($(this).parent());
-      showImage(index);
-    });
+      showImage(imageFirst);
 
-    function showImage(index) {
-      $('.main-partner .contents ul li').removeClass('selected');
-      $('.main-partner .contents ul li:eq(' + index + ')').addClass('selected');
-      imageNow = index;
-      imagePrev = (index === 0) ? imageLength : (index - 1); 
-      imageNext = (index === imageLength) ? 0 : (index + 1);
+      $('.main-partner .contents ul li a').on('mouseenter focus', function () {
+        var index = $('.main-partner .contents ul li').index($(this).parent());
+        showImage(index);
+      });
 
-      if(isTimerOn === true) {
-        clearTimeout(timerId);
-        timerId = setTimeout(function () {
-          showImage(imageNext);
-        }, timerSpeed);
+      function showImage(index) {
+        $('.main-partner .contents ul li').removeClass('selected');
+        $('.main-partner .contents ul li:eq(' + index + ')').addClass('selected');
+        imageNow = index;
+        imagePrev = (index === 0) ? imageLength : (index - 1);
+        imageNext = (index === imageLength) ? 0 : (index + 1);
+
+        if (isTimerOn === true) {
+          clearTimeout(timerId);
+          timerId = setTimeout(function () {
+            showImage(imageNext);
+          }, timerSpeed);
+        }
       }
     }
-  }
-  
+
+    // 이미지 슬라이드
+    setImageSlide('.main-visual .image-slide', 1, true, 3000);
+
+    function setImageSlide(selector, first, status, speed) {
+      var numSlide = $(selector).find('.slide-menu .slide').length;
+      var slideNow = 0;
+      var slidePrev = 0;
+      var slideNext = 0;
+      var slideFirst = first;
+      var timerId = '';
+      var timerSpeed = speed;
+      var isTimerOn = status;
+
+      $(selector).find('.slide-menu .slide').each(function (index) {
+        $(selector).find('.pagination').append('<li><a href="#">' + (index + 1) + '</a></li>\n');
+        $(this).css({
+          'left': (index * 100) + '%'
+        });
+      });
+
+      showSlide(slideFirst);
+
+      $(selector).find('.pagination li a').on('click', function () {
+        var index = $(selector).find('.pagination li').index($(this).parent());
+        showSlide(index + 1);
+      });
+
+      function showSlide(index) {
+        if (slideNow === 0) {
+          $(selector).find('.slide-menu').css({
+            'left': -((index - 1) * 100) + '%',
+            'transition': 'none'
+          });
+        } else {
+          $(selector).find('.slide-menu').css({
+            'left': -((index - 1) * 100) + '%',
+            'transition': 'left .3s'
+          });
+        }
+
+        $(selector).find('.slide-menu .slide').removeClass('active');
+        $(selector).find('.slide-menu .slide:eq(' + (index - 1) + ')').addClass('active');
+        $(selector).find('.pagination li').removeClass('active');
+        $(selector).find('.pagination li:eq(' + (index - 1) + ')').addClass('active');
+
+        slideNow = index;
+        slidePrev = (index === 1) ? numSlide : (index - 1);
+        slideNext = (index === numSlide) ? 1 : (index + 1);
+
+        if (isTimerOn === true) {
+          clearTimeout(timerId);
+          timerId = setTimeout(function () {
+            showSlide(slideNext);
+          }, timerSpeed);
+        }
+      }
+    }
   </script>
 </body>
 </html>
