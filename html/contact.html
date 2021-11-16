@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="apple-mobile-web-app-title" content="웨딩 전문가 그룹 와이즈웨딩 - Contact" />
+  <meta name="description" content="웨딩컨설팅 전문가 그룹. 서울특별시 강남구 청담동 위치. 웨딩스타일링, 디렉팅. 호텔 웨딩홀 실시간 정보 제공. 웨딩플래너, 와이즈웨딩 모바일" />
+  <title>웨딩 전문가 그룹 와이즈웨딩 - Contact</title>
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="웨딩 전문가 그룹 와이즈웨딩 - Contact" />
+  <meta property="og:title" content="웨딩 전문가 그룹 와이즈웨딩 - Contact" />
+  <meta property="og:description" content="웨딩컨설팅 전문가 그룹. 서울특별시 강남구 청담동 위치. 웨딩스타일링, 디렉팅. 호텔 웨딩홀 실시간 정보 제공. 웨딩플래너, 와이즈웨딩 모바일" />
+  <meta property="og:image" content="../img/wise_logo.jpg" />
+  <meta property="og:url" content="https://jeon-hyerin.github.io/wisewedding" />
+  <!--Twitter Card-->
+  <meta property="twitter:card" content="summary" />
+  <meta property="twitter:site" content="웨딩 전문가 그룹 와이즈웨딩 - Contact" />
+  <meta property="twitter:title" content="웨딩 전문가 그룹 와이즈웨딩 - Contact" />
+  <meta property="twitter:description" content="웨딩컨설팅 전문가 그룹. 서울특별시 강남구 청담동 위치. 웨딩스타일링, 디렉팅. 호텔 웨딩홀 실시간 정보 제공. 웨딩플래너, 와이즈웨딩 모바일" />
+  <meta property="twitter:image" content="../img/wise_logo.jpg" />
+  <meta property="twitter:url" content="https://jeon-hyerin.github.io/wisewedding" />
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="../favicon.ico" />
+  <!-- Google Material Icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/254318af28.js" crossorigin="anonymous"></script>
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/reset.css" />
+  <link rel="stylesheet" href="../css/style_pc.css" media="screen and (min-width: 850.1px)" />
+  <link rel="stylesheet" href="../css/style_mobile.css" media="screen and (max-width: 850.0px)" />
+  <!-- JS -->
+  <script src="../js/jquery-3.6.0.min.js"></script>
+  <script defer src="../js/swiper.js"></script>
+  <script defer src="../js/common.js"></script>    
+</head>
+<body class="sub contact">
+
+  <div id="wrapper">
+    <a href="#main" id="skip-nav">본문 바로가기</a>
+    <!-- HEADER INCLUDE-->
+    <div class="header-include"></div>
+    <!-- MAIN -->
+    <main id="main">
+      <!-- VISUAL -->
+      <section class="contact-visual visual">
+        <h2 class="hide">비주얼 영역</h2>
+        <div class="inner">
+          <h3 class="title">
+            Contact
+            <span>ASK ANYTHING</span>
+          </h3>
+        </div>
+      </section>
+      <!-- CONTACT -->
+      <section class="contact main">
+        <h2 class="hide">방문상담 신청</h2>
+        <div class="inner">
+          <div class="text-group">
+            <em class="title">방문상담 신청</em>
+            <p class="description">
+              원하는 날짜와 시간을 남겨주시면 와이즈웨딩 플래너가 상담 예약을 도와드립니다. 웨딩전문가, 와이즈웨딩 플래너에게 무엇이든 물어보세요.
+            </p>
+          </div>
+          <form action="#" class="input-group">
+            <div>
+              <label for="userName">이름</label>
+              <input type="text" id="userName" placeholder="이름을 입력해주세요" required autofocus />
+            </div>
+            <div>
+              <label for="userNumber">연락처</label>
+              <input type="tel" id="userNumber" placeholder="연락처를 입력해주세요" required />
+            </div>
+            <div>
+              <label for="userDate">날짜 및 시간</label>
+              <input type="text" id="userDate" placeholder="상담을 원하는 날짜 및 시간을 입력해주세요" required />
+            </div>
+            <div>
+              <label for="userPlanner">웨딩플래너</label>
+              <input type="text" id="userPlanner" placeholder="상담을 원하는 웨딩플래너가 있다면 입력해주세요" />
+            </div>
+            <input type="checkbox" id="check" required />
+            <label for="check">
+              <a href="#">개인정보 처리방침</a>을 읽었으며 내용에 동의합니다.
+            </label>
+            <input type="submit" value="문의하기" class="btn" />
+          </form>
+        </div>
+      </section>
+    </main>
+    <!-- FOOTER INCLUDE-->
+    <div class="footer-include"></div>
+  </div>
+
+  <script>
+    'use strict';
+
+    $('.header-include').load('../include/header.html', function () {
+      setCurrentNav();
+      // header section
+      var header = document.querySelector('#header');
+      window.addEventListener('scroll', function () {
+        if (window.pageYOffset > 0) {
+          header.classList.add('scrolled');
+        } else {
+          header.classList.remove('scrolled');
+        }
+      });
+
+      $('#header .header__menu li a').on('click', function () {
+        var index = $('#header .header__menu li').index($(this).parent());
+        $('#header .header__menu li').removeClass('active');
+        $('#header .header__menu li:eq(' + index + ')').addClass('active');
+      });
+
+      // now navigation
+      function setCurrentNav() {
+        var bodyClass = $('body').attr('class');
+        var classArray = bodyClass.split(' ');
+        if (classArray[0] === 'main') return false;
+        $('#header .header__menu li').each(function () {
+          if ($(this).attr('data-link') === classArray[1]) {
+            $(this).addClass('active');
+          } else {
+            $(this).removeClass('active');
+          }
+        });
+      }
+
+      // gnb section
+      var toggleBtn = header.querySelector('.toggle-btn');
+      var closeBtn = header.querySelector('.close-btn');
+      var gnbWrap = header.querySelector('.gnb-wrap');
+
+      toggleBtn.addEventListener('click', function () {
+        gnbWrap.classList.add('open');
+        toggleBtn.classList.add('invisible');
+        closeBtn.classList.remove('invisible');
+        enable();
+      });
+
+      closeBtn.addEventListener('click', function () {
+        gnbWrap.classList.remove('open');
+        toggleBtn.classList.remove('invisible');
+        closeBtn.classList.add('invisible');
+        disable();
+      });
+    });
+    $('.footer-include').load('../include/footer.html', function () {
+      // arrow up
+      var arrowUp = document.getElementById('arrow-up');
+      var wrapper = document.getElementById('wrapper');
+      window.addEventListener('scroll', function () {
+        if (window.pageYOffset > 200) {
+          arrowUp.classList.add('visible');
+        } else {
+          arrowUp.classList.remove('visible');
+        }
+      });
+
+      arrowUp.addEventListener('click', function () {
+        wrapper.scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>
